@@ -2,14 +2,13 @@
 
 This is a demo example of a very basic Rails app with no models.
 
-rails generate controller convert
+rails generate controller convert index celsius
 
-Add index and celsius methods
+Add index and celsius methods to controller
 
-modify routes.rb with
-get 'convert/index'
-post 'convert/celsius'
+maybe modify routes.rb with:
+
 root 'convert#index'
 
-Add index.html.erb and (copy) for celsius.html.erb views
+Edit index and celsius views
 
