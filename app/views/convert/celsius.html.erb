@@ -1,0 +1,9 @@
+<h1>Your temp in celsius is:</h1>
+<h3><%= @celsius_temp %></h3>
+<p>enter a temperature in fahenheit to see its value in celsius</p>
+<%= form_tag(controller: "convert", action: "celsius", method: "post") do %>
+<%= label_tag "convert a temp" %>
+<%= text_field_tag :temp %>
+<%= submit_tag("Convert") %>
+
+<% end %>
