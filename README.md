@@ -1,24 +1,15 @@
-# README
+# README for Temperature Conversion
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a demo example of a very basic Rails app with no models.
 
-Things you may want to cover:
+rails generate controller convert
 
-* Ruby version
+Add index and celsius methods
 
-* System dependencies
+modify routes.rb with
+get 'convert/index'
+post 'convert/celsius'
+root 'convert#index'
 
-* Configuration
+Add index.html.erb and (copy) for celsius.html.erb views
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
