@@ -1,0 +1,14 @@
+<h1>Your temp in <%= @output %> is:</h1>
+<h3><%= @temp.to_i %></h3>
+<p>enter a temperature and select the button to see it's value </p>
+<%= form_tag( "/convert/temp", method: "get") do %>
+    <%= label_tag "Celsius" %>
+    <%= radio_button_tag( :output, 'C' ) %>
+    <%= label_tag "Fahrenheit" %>
+    <%= radio_button_tag( :output, 'F' ) %><br />
+
+    <%= label_tag "convert a temp" %>
+    <%= text_field_tag :value %>
+    <%= submit_tag("Convert") %>
+
+<% end %>

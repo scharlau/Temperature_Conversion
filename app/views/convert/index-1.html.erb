@@ -1,0 +1,8 @@
+<h1>welcome to the converter</h1>
+<p>enter a temperature in fahenheit to see its value in celsius</p>
+<%= form_tag( "/convert/celsius", method: "get") do %>
+<%= label_tag "convert a temp" %>
+<%= text_field_tag :fahrenheit %>
+<%= submit_tag("Convert") %>
+
+<% end %>
