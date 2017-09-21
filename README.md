@@ -20,14 +20,15 @@ This will create a new rails application for you to use in this exercise.
 This will create a controller with index and celsius methods, and set up the routes.rb file for
 these paths.
 
-Nnow we can get started with the rounds of the exercise.
+Now we can get started with the rounds of the exercise. Remember, each round should be only twelve minutes.
 
 Round one: Edit index and celsius views so that you land on the index page and fill in the form with the
 temperature in farhrenheit that you'd like to convert, press a button, and then end up on the celsius
 page with the result of your conversion.
 
 Round two: build on the previous work so that you can convert from celsius to farhrenheit in the same form
-by adding a radio button, which will let you indicate which way you want to do the conversion.
+by adding a radio button, which will let you indicate which way you want to do the conversion. You'll find
+this RailsGuide on views useful http://guides.rubyonrails.org/form_helpers.html 
 
 Round three: Have the page background change colour if the result is above, below, or between some given
 values. 
