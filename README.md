@@ -20,12 +20,8 @@ these paths.
 
 Now we can get started with the rounds of the exercise. Remember, each round should be only twelve minutes.
 
-Round one: Edit index and celsius views so that you land on the index page and fill in the form with the
-temperature in farhrenheit that you'd like to convert, press a button, and then end up on the celsius
-page with the result of your conversion.
+Round one: Edit index and celsius views so that you land on the index page and fill in the form with the temperature in farhrenheit that you'd like to convert, press a button, and then end up on the celsius page with the result of your conversion.
 
-Round two: build on the previous work so that you can convert from celsius to farhrenheit in the same form
-by adding a radio button, which will let you indicate which way you want to do the conversion. You'll find
-this RailsGuide on views useful http://guides.rubyonrails.org/form_helpers.html
+Round two: build on the previous work so that you can convert from celsius to farhrenheit in the same form by adding a radio button, which will let you indicate which way you want to do the conversion. You'll find this RailsGuide on views useful http://guides.rubyonrails.org/form_helpers.html
 
-Round three: Develop some other feaure to push the boundaries of what you want to learn with Rails.
+Round three: Develop some other feature to push the boundaries of what you want to learn with Rails.
