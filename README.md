@@ -27,13 +27,13 @@ You can get started by creating a form in the app/views/convert/index.html.erb f
         <%= form_tag( "/convert/celsius", method: "get") do %>
         <%= label_tag "convert a temp" %>
         <%= text_field_tag :fahrenheit %>
-       <%= submit_tag("Convert") %>
+        <%= submit_tag("Convert") %>
         <% end %>
 
 The controller needs to retrieve the 'fahrenheit' value and then convert it to celsius.
         def celsius
-                @celsius_temp = (params[:fahrenheit].to_i-32)*0.5556
-                return @celsius_temp
+           @celsius_temp = (params[:fahrenheit].to_i-32)*0.5556
+           return @celsius_temp
         end
 
 I'll leave you to set up the celsius.html.erb page to display the result.
