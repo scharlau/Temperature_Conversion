@@ -23,18 +23,27 @@ Now we can get started with the rounds of the exercise. Remember, each round sho
 You can get started by creating a form in the app/views/convert/index.html.erb file to enter the temperature to convert. Our form is not tied to a model, so we use the form_tag, which needs to know the name of the method in the controller, and if it's a get or put. You also need to give your text_field a variable name, which you retrieve in the controller.  We finish the whole thing with an 'end' tag.
 
 ><h1>welcome to the converter</h1>
+
 ><p>enter a temperature in fahenheit to see its value in celsius</p>
+
 ><%= form_tag( "/convert/celsius", method: "get") do %>
+
 ><%= label_tag "convert a temp" %>
+
 ><%= text_field_tag :fahrenheit %>
+
 ><%= submit_tag("Convert") %>
+
 ><% end %>
 
 The controller needs to retrieve the 'fahrenheit' value and then convert it to celsius.
-def celsius
-        @celsius_temp = (params[:fahrenheit].to_i-32)*0.5556
-        return @celsius_temp
-    end
+>def celsius
+
+>        @celsius_temp = (params[:fahrenheit].to_i-32)*0.5556
+
+>        return @celsius_temp
+
+>    end
 
 I'll leave you to set up the celsius.html.erb page to display the result.
 
