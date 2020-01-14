@@ -1,4 +1,6 @@
-This is the README for Temperature Conversion, which is a demo example of a very basic Rails app with no models. This is part of a 'deliberate practice' coding exercise. You can do this on your own or as part of a pair programming experience. Only look at the code in the repo when you're done.
+# Temperature Convertion
+
+This is Temperature Conversion, which is a basic Ruby on Rails app with no models. This is part of a 'deliberate practice' coding exercise. You can do this on your own or as part of a pair programming experience. Only look at the code in the repo when you're done.
 
 The goal of the exercise is to think about how you'd solve this challenge, and to work at developing code to make the idea work. There is no 'correct' version of this code. The purpose is spend time on 'deliberate practice' to gain more experience creating Rails applications.
 
@@ -7,7 +9,7 @@ The formula for conversion from farhrenheit to celsius is:
         F to C: (F - 32) * 5/9
         C to F: (C * 9/5) + 32
 
-Start your new rails app with the command (unless you're in Cloud 9)
+Start your new rails app with the command
 
         rails new temp_convert
 
@@ -16,9 +18,13 @@ This will create a new rails application for you to use in this exercise. After 
         rails generate controller convert index celsius
 
 This will create a controller with index and celsius methods, and set up the routes.rb file for
-the paths on this controller so that you can view your app at localhost:3000/convert/index. 
+the paths on this controller so that you can view your app at localhost:3000/convert/index. Start your sever with the command 
 
-Now we can get started with the rounds of the exercise. Remember, each round should be only twelve minutes. 
+     rails server
+
+With that running, we're ready to do the work. Just refresh the page, modify the form, try it, etc. As you have errors, just edit the file and then refresh the page. 
+
+## Doing the Work
 
 You can get started by creating a form in the app/views/convert/index.html.erb file to enter the temperature to convert. Our form is not tied to a model, so we use the form_tag, which needs to know the name of the method in the controller, and if it's a 'get' or 'put' method. We're only using 'get' methods in this exercise. (You would use 'put' methods when you're putting persistent data onto the server.) You also need to give your text_field a variable name, which you retrieve in the controller.  We finish the whole thing with an 'end' tag.
 
@@ -37,7 +43,7 @@ The controller is where the magic happens. You send the controller the 'fahrenhe
            return @celsius_temp
         end
 
-I'll leave you to set up the celsius.html.erb page to display the result. You can display ruby variables in a view with <%= @variable_name %>.
+I'll leave you to set up the celsius.html.erb page to display the result. You can display ruby variables in a view with <%= @variable_name %> where @variable_name is whatever name you want to see such as @celsius_temp.
 
 Round one: Edit index and celsius views so that you land on the index page and fill in the form with the temperature in farhrenheit that you'd like to convert, press a button, and then end up on the celsius page with the result of your conversion.
 
