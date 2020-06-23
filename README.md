@@ -9,9 +9,12 @@ The formula for conversion from farhrenheit to celsius is:
         F to C: (F - 32) * 5/9
         C to F: (C * 9/5) + 32
 
-Start your new rails app with the command
+## Start Building the App
+Start building your new rails app with these three commands (you might only need the first one)
 
         rails new temp_convert
+        rails webpacker:install
+        yarn install --missing files
 
 This will create a new rails application for you to use in this exercise. After the application is generated, then cd into that new directory and run this command:
 
@@ -43,9 +46,9 @@ The controller is where the magic happens. You send the controller the 'fahrenhe
            return @celsius_temp
         end
 
-I'll leave you to set up the celsius.html.erb page to display the result. You can display ruby variables in a view with <%= @variable_name %> where @variable_name is whatever name you want to see such as @celsius_temp.
+I'll leave you to set up the app/views/celsius.html.erb page to display the result. As the minimum that you put in the file, you need to display the ruby variable for the @celsius_temp using the format: <%= @variable_name %> where @variable_name is whatever name you want to see such as @celsius_temp.
 
-Round one: Edit index and celsius views so that you land on the index page and fill in the form with the temperature in farhrenheit that you'd like to convert, press a button, and then end up on the celsius page with the result of your conversion.
+Round one: Edit the index and celsius views so that you land on the index page and fill in the form with the temperature in farhrenheit that you'd like to convert, press a button, and then end up on the celsius page with the result of your conversion.
 
 Round two: build on the previous work so that you can convert from celsius to farhrenheit in the same form by adding a radio button, which will let you indicate which way you want to do the conversion. You'll find this RailsGuide on views useful http://guides.rubyonrails.org/form_helpers.html
 
